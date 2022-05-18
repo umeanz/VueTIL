@@ -17,4 +17,8 @@ WhY using the 'vue.js'?!
 
 ## syntax
 ----------------------------------------------------
-1) 
+1) Instanse & Life cycle
+2) Computed
+3) Computed chache
+4) Getter, Setter
+5) Watch 
