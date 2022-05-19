@@ -55,13 +55,23 @@ WhY using the 'vue.js'?!
         }
     }
     ```
-    - when put two object in style can use array style.
+    - when put two object in style can use array style.</br></br>
 
 7) conditioning rendering 
     - v-if use redering a block up to condtion. 
     - v-show is always rendering, even not match with initial condition.<br/>(Firt, v-show redering element in DOM(html). and follow the condition change CSS propeety display:block/display:none)
-    - generaly v-if has higher toggle cost while v-show has higher initial render costs.(from vuejs.org)<br/> the v-show better to use change toggle often or it is better yo use v-if as not change condition in runtime. 
+    - generaly v-if has higher toggle cost while v-show has higher initial render costs.(from vuejs.org)<br/> the v-show better to use change toggle often or it is better yo use v-if as not change condition in runtime. </br></br>
 
 8) List rendering<br/>
     (key need specific value) 
-    
+    (pck to distinguish array objects : npm i -D shortid )
+    - nue wraps an obseved array's mutaion methods so they will also trigger view upadtes.(from vuejs.org)
+    </br></br>
+
+9) Event handling
+    - former format is v-on:event = "method name", can make shor in @event = " method name"  
+    - can use envent in \<div> but it is messive expression. 
+    - when put more than one event, have to put small bracket end of methods.  </br></br>
+
+10) Event modifiers
+    - call event.preventDefault() or event Propagation() is common. but it is better to use method about data logic only. 

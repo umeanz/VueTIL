@@ -1,27 +1,17 @@
 <template>
-  <ul>
-    <li v-for="fruit in newFruits" 
-    :key="fruit.id">
-      {{ fruit.name }}
-    </li>
-  </ul>
+  <a href="https://naver.com"
+  target="_blank"
+  @click="handler">
+   NAVER
+  </a>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      fruits:['Apple','Banana','Cherry']
-    }
-  },
-  computed: {
-    newFruits() {
-      return this.fruits.map((fruit, index)=>{
-        return{
-          id: index,
-          name: fruit
-        }
-      })
+  methods: {
+    handler(event) {
+      event.preventDefault()
+      console.log('ABC!')
     }
   }
 }
